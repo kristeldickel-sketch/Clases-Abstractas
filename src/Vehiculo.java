@@ -1,5 +1,15 @@
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+public abstract class Vehiculo {
+    private String id;
+   
+    public Vehiculo(String id){
+        this.id=id;
     }
+
+
+    public String getId(){
+        return id;
+    }
+
+
+    public abstract void patronMovimiento();
 }
