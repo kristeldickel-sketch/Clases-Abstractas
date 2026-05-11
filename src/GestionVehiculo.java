@@ -2,15 +2,28 @@ import java.util.*;
 public class GestionVehiculo {
     private Map<String, Vehiculo> vehiculos = new HashMap<>();
 
+    /**
+     * Crea un nuevo vehículo y lo agrega al sistema.
+      * @param v El vehículo a registrar.
+     */
     public void crearVehiculo(Vehiculo v){
         vehiculos.put(v.getId(), v);
         System.out.println(" Vehículo " + v.getId() + " registrado correctamente.");
     }
 
+    /**
+     * Retorna una lista de todos los vehículos registrados en el sistema.
+     * @return
+     */
     public List<Vehiculo> listarVehiuculos(){
         return new ArrayList<>(vehiculos.values());
     }
 
+    /**
+     * Busca un vehículo por su ID y lo retorna. Si no se encuentra, retorna null.
+     * @param id
+     * @return
+     */
     public Vehiculo buscarVehiculo(String id){
         Vehiculo v = vehiculos.get(id);
         if (v != null) {
@@ -21,6 +34,12 @@ public class GestionVehiculo {
         return v;
     }
 
+    /**
+     * Modifica el tipo y autonomía de un vehículo existente.
+     * @param id
+     * @param nuevoTipo
+     * @param nuevaAutonomia
+     */
     public void modificarVehiculo(String id, String nuevoTipo, String nuevaAutonomia){
         Vehiculo v = vehiculos.get(id);
         if (v != null) {
@@ -32,6 +51,10 @@ public class GestionVehiculo {
         }
     }
 
+    /**
+     * Elimina un vehículo del sistema por su ID.
+     * @param id
+     */
     public void eliminarVehiculo(String id){
         if (vehiculos.containsKey(id)) {
             vehiculos.remove(id);
@@ -41,6 +64,9 @@ public class GestionVehiculo {
         }
     }
 
+    /**
+     * Imprime la lista de todos los vehículos registrados en el sistema.
+     */
     public void imprimir() {
         System.out.println("\n=== Listado de vehículos ===");
         vehiculos.values().forEach(v ->
