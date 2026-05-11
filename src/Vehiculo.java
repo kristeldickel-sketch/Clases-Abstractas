@@ -9,6 +9,11 @@ public abstract class Vehiculo {
      */
     private String id;
 
+
+    private String tipo;
+    private String autonomia;
+
+
     /**
      * Constructor de la clase Vehiculo.
      *
@@ -18,6 +23,14 @@ public abstract class Vehiculo {
         this.id = id;
     }
 
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setAutonomia(String autonomia) {
+        this.autonomia = autonomia;
+    }
+
     /**
      * Obtiene el identificador del vehículo.
      *
@@ -25,6 +38,15 @@ public abstract class Vehiculo {
      */
     public String getId(){
         return id;
+    }
+    
+    public String getAutonomia() {
+        return autonomia;
+    }
+
+
+    public String getTipo() {
+        return tipo;
     }
 
     /**
