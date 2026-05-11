@@ -15,7 +15,7 @@ public class GestionVehiculo {
      * Retorna una lista de todos los vehículos registrados en el sistema.
      * @return
      */
-    public List<Vehiculo> listarVehiuculos(){
+    public List<Vehiculo> listarVehiculos(){
         return new ArrayList<>(vehiculos.values());
     }
 
