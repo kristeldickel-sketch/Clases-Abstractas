@@ -25,8 +25,6 @@ public class CentroControl {
      */
     public void monitorearFlota(){
         System.out.println("Vehiculos en la flota: ");
-        for(Vehiculo v : flota){
-            v.patronMovimiento();
-        }
+        flota.forEach(v -> v.patronMovimiento());
     }
 }

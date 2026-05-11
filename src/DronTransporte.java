@@ -15,7 +15,8 @@ public class DronTransporte extends Vehiculo implements IConectable, ICargaElect
         this.cargaKg = cargaKg;
         this.nivelBateria = nivelBateria;
     }
-    public int getNivelBateria(){
+    
+    public int getNivelBateria() {
         return nivelBateria;
     }
 
