@@ -77,6 +77,7 @@ public class AnalizadorFlota {
     public List<Vehiculo> ordenarPorTipo() {
         return flota.stream()
                 .sorted(Comparator.comparing(v -> (v.getTipo() == null ? "" : v.getTipo())))
+                .collect(Collectors.toList());
 
     }
 
@@ -104,7 +105,7 @@ public class AnalizadorFlota {
      * y cantidad por tipo.
      */
     public void mostrarEstadisticas() {
-        System.out.println("ESTADÍSTICAS DE FLOTA");
+        System.out.println("Estadisticas de flota");
 
         long total = contarVehiculos();
         long conectables = filtrarConectados().size();

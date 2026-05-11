@@ -7,7 +7,7 @@ public interface ICargaElectrica {
     /**
      * Obtiene el nivel actual de la batería.
      */
-    public void getNivelBateria();
+    public int getNivelBateria();
 
     /**
      * Inicia el proceso de carga de la batería.
