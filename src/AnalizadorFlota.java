@@ -2,11 +2,11 @@ import java.util.*;
 import java.util.stream.*;
 
 /**
- * Clase encargada del procesamiento avanzado de la flota logistica
+ * Clase encargada del procesamiento avanzado de la flota
  * mediante Streams, ordenamiento, integracion y generacion de reportes.
  * Ejercicio 3: Procesamiento con Streams
  * Ejercicio 4: Ordenamiento
- * Ejercicio 5: Integración
+ * Ejercicio 5: Integración (en el main)
  * Ejercicio 6: Mejora Propuesta
  *
  * @author Mia Tanikawa
@@ -84,7 +84,7 @@ public class AnalizadorFlota {
     //Ejercicio 6 Mejora Propuesta
     /**
      * Genera un reporte detallado de todos los vehículos de la flota,
-     * clasificándolos por tipo.
+     * clasificados por tipo.
      */
     public void generarReporte() {
         System.out.println("REPORTE DE FLOTA LOGÍSTICA");
@@ -123,7 +123,7 @@ public class AnalizadorFlota {
         System.out.println();
     }
     /**
-     * Búsqueda avanzada: filtra vehículos conectables cuyo ID contenga
+     * Metodo que filtra vehículos conectables cuyo ID contenga
      * el prefijo indicado, y los devuelve ordenados por ID.
      * @param prefijo Prefijo a buscar en el ID (ej: "D" para drones).
      */
